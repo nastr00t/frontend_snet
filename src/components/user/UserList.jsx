@@ -15,7 +15,6 @@ export const UserList = ({ users, getUsers, following, setFollowing, more, page,
   const nextPage = () => {
     let next = page + 1;
     setPage(next);
-
     // Le enviamos el número de página actual al método getUsers
     getUsers(next);
 
